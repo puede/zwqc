@@ -1,0 +1,246 @@
+@import "_color"
+.case-b
+    padding-top: 21px
+    padding-bottom: 21px
+    text-align: center
+    background: $grey
+    &:hover
+        background: $blue
+        span,img
+            color: #ffffff
+    img
+        position: absolute
+        @media (min-width: 320px)
+            left: 88px
+        @media (min-width: 350px)
+            left: 116px
+        @media (min-width: 400px)
+            left: 126px
+        @media (min-width: 450px)
+            left: 0px
+        @media (min-width: 500px)
+            left: 12px
+        @media (min-width: 600px)
+            left: 36px
+        @media (min-width: 760px)
+            left: 58px
+        @media (min-width: 1000px) and (max-width: 1199px)
+            left: 97px
+        @media (min-width: 1200px)
+            left: 130px
+        bottom: 25px
+    span
+        position: relative
+.case
+    margin-top: 40px
+    margin-bottom: 10px
+    li
+        margin-bottom: 30px
+        h4
+            font-weight: normal
+            line-height: 55px
+            text-align: center
+        p
+            font-size: 14px
+            line-height: 24px
+            text-align: center
+        .chanliang
+            padding-bottom: 10px
+        .read-more
+            border-top: 1px solid #888888
+            margin: 0 20px
+            a
+                text-align: center
+                font-size: 14px
+                line-height: 45px
+        .case-beijing
+            background: #f7f7f7
+            &:hover
+                background: $blue
+                transition: all .3s
+                h4,p,a
+                    color: #fff
+                .read-more
+                    border-top: 1px solid #ffffff
+// 分页
+.fenye
+    text-align: center
+    margin-bottom: 50px
+    .pagination
+        li
+            border-style: none
+            border-radius: 0
+            background: #e5e5e5
+            &:hover
+                a
+                    color: #ffffff
+                    background: $blue
+    .pagination-group
+        .active
+            background: $blue
+            a
+                color: #ffffff
+        a
+            &:hover
+                background: $blue
+                color: #ffffff
+// 案例中心内页
+.case-keli
+    padding-top: 35px
+    h2
+        font-size: 24px
+        font-weight: normal
+        text-align: center
+        line-height: 30px
+    ul
+        padding-top: 30px
+        padding-bottom: 30px
+    img
+        @media (max-width: 759px)
+            margin-bottom: 10px
+    .case-article-1
+        @media (min-width: 760px)
+            padding-right: 10px
+    .case-article-3
+        @media (min-width: 760px)
+            padding-top: 8px
+        @media (min-width: 1000px) and (max-width: 1199px)
+            padding-top: 13px
+        @media (min-width: 1200px)
+            padding-top: 16px
+.detail
+    background: $blue
+    margin-bottom: 30px
+    @media (min-width: 320px)
+        padding-top: 30px
+        padding-bottom: 30px
+    @media (min-width: 760px)
+        padding-top: 16px
+        padding-bottom: 10px
+    @media (min-width: 1000px)
+        padding-top: 16px
+        padding-bottom: 10px
+    @media (min-width: 1200px)
+        padding-top: 30px
+        padding-bottom: 30px
+    ul
+        position: relative
+        li
+            p
+                color: #ffffff
+                font-size: 14px
+                line-height: 30px
+                text-indent: 0
+                @media (min-width: 600px)
+                    width: 50%
+                    float: left
+                @media (min-width: 1000px)
+                    line-height: 24px
+                @media (min-width: 1200px)
+                    line-height: 30px
+            span
+                color: #ffffff
+                font-size: 14px
+                line-height: 30px
+                width: 100%
+                float: left
+        .zx
+            @media (min-width: 320px) and (max-width: 759px)
+                padding-left: 15px
+                bottom: -30px
+                right: 0
+                background: $orange
+                position: absolute
+            @media (min-width: 760px)
+                background: $orange
+                position: absolute
+                bottom: 14px
+                right: 0
+                width: 126px
+                height: 126px
+            @media (min-width: 1000px)
+                bottom: -10px
+                right: 0
+                width: 170px
+                height: 158px
+            @media (min-width: 1200px)
+                bottom: -30px
+                right: 0
+                width: 200px
+                height: 180px
+            img
+                @media (min-width: 320px) and (max-width: 759px)
+                    float: left
+                    padding-top: 7px
+                    width: 21%
+                @media (min-width: 760px)
+                    margin: 0 auto
+                    display: block
+                    padding-top: 40px
+                @media (min-width: 1000px)
+                    margin: 0 auto
+                    display: block
+                    padding-top: 50px
+                @media (min-width: 1200px)
+                    margin: 0 auto
+                    display: block
+                    padding-top: 62px
+            p
+                text-indent: 0
+                @media (min-width: 320px) and (max-width: 759px)
+                    height: 30px
+                    float: left
+                    padding-top: 3px
+                    padding-left: 5px
+                    padding-right: 8px
+                @media (min-width: 760px)
+                    text-align: center
+                    padding-top: 5px
+// 现场情况
+.occasion,.customer-comment
+    position: relative
+    margin-bottom: 34px
+    .wbx
+        position: absolute
+        top: 0
+        left: 100px
+        width: 0
+        height: 0
+        border-top: 17px solid transparent
+        border-left: 14px solid #177cb0
+        border-bottom: 17px solid transparent
+    h3
+        font-size: 16px
+        font-weight: normal
+        line-height: 35px
+        background: $blue
+        color: #ffffff
+        width: 100px
+        text-align: center
+        margin-bottom: 17px
+    p
+        font-size: 14px
+        line-height: 30px
+
+// 热销产品
+.product-relative
+    padding-top: 10px
+    h2
+        font-size: 24px
+        font-weight: normal
+        color: $blue
+        padding-top: 24px
+        padding-bottom: 30px
+    li
+        height: 238px
+        margin-bottom: 50px
+        img
+            margin: 0 auto
+            height: 198px
+            margin-bottom: 20px
+        h4
+            font-size: 16px
+            text-align: center
+            line-height: 40px
+            border-top: 3px solid #888888
+            

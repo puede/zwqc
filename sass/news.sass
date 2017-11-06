@@ -1,0 +1,296 @@
+@import "_color"
+.news
+    .news-img
+        
+        @media (min-width: 320px)
+            margin-top: 20px
+            margin-bottom: 20px
+        @media (min-width: 1000px)
+            margin-bottom: 60px
+        @media (min-width: 1200px)
+            margin-top: 40px
+    .news-content
+        margin-bottom: 60px
+        @media (min-width: 320px)
+            margin-top: 20px
+        @media (min-width: 1200px)
+            margin-top: 40px
+        
+        h3
+            padding-bottom: 10px
+            @media (min-width: 1200px)
+                padding-top: 10px
+        p
+            font-size: 14px
+            line-height: 30px
+            
+        .content
+            border-bottom: 1px solid #888888
+            padding-bottom: 10px
+            @media (min-width: 1000px) and (max-width: 1199px)
+                padding-bottom: 5px
+.shijian
+    float: left
+    margin-bottom: 20px
+    @media (min-width: 1000px) and (max-width: 1199px)
+        margin-bottom: 0
+    @media (min-width: 320px)
+        width: 50%
+    @media (min-width: 450px)
+        width: 30%
+    @media (min-width: 1200px)
+        width: 25%
+        padding-top: 5px
+    span
+            font-size: 16px
+            padding-right: 10px
+.liulan
+    margin-bottom: 20px
+    @media (min-width: 1000px) and (max-width: 1199px)
+        margin-bottom: 5px
+    @media (min-width: 1200px)
+        padding-top: 5px
+    span
+            font-size: 16px
+            padding-right: 10px
+.xiangqing
+    background: $blue
+    color: #ffffff
+    font-size: 16px
+    padding: 6px 20px
+    @media (min-width: 1000px) and (max-width: 1199px)
+        font-size: 14px
+        padding: 5px 20px 
+    &:hover
+        color: #ffffff
+.banner
+    .pointer 
+        li
+            width: 40px
+            height: 5px
+            border-radius: 0
+            border-style: none
+            background: #dcdcdc
+        .active
+            width: 40px
+            height: 5px
+            margin: 1px
+            background: $blue
+            
+    .pager-prev,.icon-angle-left,.pager-next,.icon-angle-right
+        display: none
+    &:hover
+        .pager-prev,.icon-angle-left,.pager-next,.icon-angle-right
+            display: none
+// 企业新闻,行业新闻
+.corporate-news
+    padding-top: 60px
+    background: $blue
+    color: $blue  
+.tab
+    margin-top: -60px
+    border: 0
+    height: 60px
+    .tab-nav 
+        .active
+            background-color: #ffffff
+            a
+                h3
+                    color: $blue
+        li
+            width: 132px
+            margin-left: -10px
+            a 
+                border: 0
+                padding: 0
+                display: block
+                text-align: center
+                padding: 0  0px
+                h3
+                    color: #ffffff
+                    font-weight: normal
+                    &:hover
+                        color: $blue
+                        background: #ffffff
+                    line-height: 60px
+    .tab-body
+        border: 0
+        .tab-panel
+            ul .a
+                @media (min-width: 320px)
+                    margin: 5px
+                @media (min-width: 500px)
+                    padding: 15px
+                    margin: 0
+                a
+                    h4
+                        font-size: 16px
+                        padding-top: 10px
+                        padding-bottom: 15px
+                    .cc
+                        font-size: 14px
+                        line-height: 30px
+                        padding-bottom: 24px
+                        border-bottom: 1px solid #d2d2d2
+                    &:hover
+                        h4
+                            color: $blue
+                            font-weight: normal
+                        .cc
+                            border-bottom: 1px solid $blue
+      
+// 分页
+.fenye
+    text-align: center
+    margin-bottom: 50px
+    margin-top: 15px
+    .pagination
+        margin-bottom: -20px
+        li
+            border-style: none
+            border-radius: 0
+            background: #e5e5e5
+            padding: 0
+            a
+                @media (min-width: 320px)
+                    font-size: 14px
+                @media (min-width: 500px)
+                    font-size: 16px
+            &:hover
+                a
+                    color: #ffffff
+                    background: $blue
+    .pagination-group
+        .active
+            background: $blue
+            a
+                color: #ffffff
+        a
+            &:hover
+                background: $blue
+                color: #ffffff
+// 热销产品
+.product-relative
+    padding-top: 10px
+    h2
+        font-size: 24px
+        font-weight: normal
+        color: $blue
+        padding-top: 90px
+        padding-bottom: 30px
+    li
+        height: 238px
+        margin-bottom: 50px
+        img
+            margin: 0 auto
+            height: 198px
+            margin-bottom: 20px
+        h4
+            font-size: 16px
+            text-align: center
+            line-height: 40px
+            border-top: 3px solid #888888
+// 新闻中心内页
+.news-detail
+    padding-top: 28px
+    padding-bottom: 30px
+    h3
+        line-height: 60px
+        border-bottom: 1px solid $blue
+    .clock
+        padding-top: 10px
+        margin-bottom: 26px
+        @media (min-width: 320px)
+            width: 50%
+            float: left
+        @media (min-width: 760px)
+            width: 20%
+            float: left
+        
+        span
+            font-size: 20px
+            padding-right: 10px
+    .eye
+        padding-top: 10px
+        margin-bottom: 26px
+        @media (min-width: 320px)
+            width: 50%
+            float: left
+        @media (min-width: 760px)
+            width: 80%
+            text-align: left
+        
+        span
+            font-size: 20px
+            padding-right: 10px
+    .content-detail
+        font-size: 14px
+        line-height: 30px
+        text-indent: 2em
+        padding-bottom: 10px
+    ul
+        padding-top: 22px
+        padding-bottom: 30px
+        li
+            img
+                padding-top: 5px
+                padding-bottom: 5px
+    video
+        margin: 0 auto
+        display: block
+        padding-top: 20px
+        padding-bottom: 20px
+    .next-art  
+        p
+            background: $blue
+            padding-left: 19px
+            @media (min-width: 320px)
+                line-height: 40px
+            @media (min-width: 760px)
+                line-height: 60px
+            a
+                color: #ffffff
+                font-size: 14px
+        .last
+            text-align: left
+            margin-bottom: 10px
+        .next
+            text-align: left
+            margin-bottom: 10px
+.anli
+    h2
+        font-size: 24px
+        font-weight: normal
+        color: $blue
+        padding-bottom: 20px
+    ul
+        li
+            margin-bottom: 20px
+            a
+                img
+                    @media (min-width: 1000px)
+                        position: relative
+            p   
+                text-align: center
+                line-height: 40px
+                @media (min-width: 1000px)
+                    display: none
+            &:hover
+                p
+                    text-align: center
+                    @media (min-width: 1000px)
+                        width: 92%
+                        bottom: 0
+                        display: block
+                        position: absolute
+                        line-height: 70px
+                        background: $orange
+                    @media (min-width: 1200px)
+                        width: 90%
+                        bottom: 0
+                        display: block
+                        position: absolute
+                        line-height: 70px
+                        background: $orange
+            
+            
