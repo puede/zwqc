@@ -1,25 +1,36 @@
 @import "_color"
+.tab .tab-nav li a
+    border-style: none
+    padding: 1px 20px
+    @media (min-width: 320px) and (max-width: 449px)
+        padding: 0
+.tab .tab-nav .active
+    background: $blue
+    span
+        color: #ffffff
+.tab .tab-body-bordered
+    border: none
+    padding: 0
 .case-b
     padding-top: 21px
     padding-bottom: 21px
     text-align: center
     background: $grey
+    @media (min-width: 320px) and (max-width: 449px)
+        width: 33.333333%
+        float: left
     &:hover
         background: $blue
         span,img
             color: #ffffff
     img
         position: absolute
-        @media (min-width: 320px)
-            left: 88px
-        @media (min-width: 350px)
-            left: 116px
-        @media (min-width: 400px)
-            left: 126px
+        @media (min-width: 320px) and (max-width: 449px)
+            display: none
         @media (min-width: 450px)
-            left: 0px
-        @media (min-width: 500px)
             left: 12px
+        @media (min-width: 500px)
+            left: 25px
         @media (min-width: 600px)
             left: 36px
         @media (min-width: 760px)
@@ -75,6 +86,9 @@
                 a
                     color: #ffffff
                     background: $blue
+            a
+                @media (min-width: 320px) and (max-width: 449px)
+                    font-size: 14px
     .pagination-group
         .active
             background: $blue
