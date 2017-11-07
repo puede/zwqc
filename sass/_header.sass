@@ -41,6 +41,12 @@
     .nav .active a, .nav-head
         font-weight: normal
     .nav .active
+        a
+            @media (min-width: 320px) and (max-width: 759px)
+                color: $blue
         .bder
-            border-bottom: 3px solid $blue
+            @media (min-width: 320px) and (max-width: 759px)
+                border-bottom: 3px solid #ffffff
+            @media (min-width: 760px)
+                border-bottom: 3px solid $blue
 
