@@ -58,7 +58,7 @@
                             <a href="./about_us.html" target="">关于黎明</a>
                             <span class="bder"></span>
                         </li>
-                        <li class="act">
+                        <li class="act active">
                             <a href="./contact_us.html" target="">联系我们</a>
                             <span class="bder"></span>
                         </li>
@@ -68,8 +68,8 @@
         </div>
     </header>
     <!-- banner -->
-    <div class="">
-        <img class="img-res" src="./img/contact/contact-banner.jpg" alt="">
+    <div class="bner">
+        <img class="" src="./img/contact/contact-banner.jpg" alt="">
     </div>
     <!-- content -->
     <div class="container">
@@ -280,7 +280,15 @@
     <script>
         var areaMap = new AreaMap('province', 'city');
         areaMap.province('', '');
+        $(document).ready(function () {
+			$(".nav .act").mouseenter(function () {
+				$(this).addClass("active").siblings().removeClass("active")
+			});
+        });
     </script>
+    
+        
+    
     <!--[if lt IE 9]>
 	<script src="/js/respond.js"></script>
     <![endif]-->

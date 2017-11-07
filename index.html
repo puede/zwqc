@@ -37,8 +37,7 @@
                 </div>
                 <div class="xl12 xs9 xm8 xb6 doc-nav">
                     <ul class="nav nav-inline nav-navicon padding-small-top nav-menu" id="doc-header-pintuer">
-                        
-                        <li class="act">
+                        <li class="act active">
                             <a href="./" target="">首页</a>
                             <span class="bder"></span>
                         </li>
@@ -69,8 +68,8 @@
         </div>
     </header>
     <!-- banner -->
-    <div class="">
-        <img class="img-res" src="./img/banner_index.jpg" alt="">
+    <div class="bner">
+        <img class="" src="./img/banner_index.jpg" alt="">
     </div>
     <!-- content -->
     <div class="container">
@@ -290,6 +289,15 @@
 
     <script src="./js/jquery.js"></script>
     <script src="./js/pintuer.js"></script>
+
+
+    <script>
+        $(document).ready(function () {
+			$(".nav .act").mouseenter(function () {
+				$(this).addClass("active").siblings().removeClass("active")
+			});
+        });
+    </script>
     <!--[if lt IE 9]>
 	<script src="/js/respond.js"></script>
     <![endif]-->

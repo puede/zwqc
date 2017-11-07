@@ -41,7 +41,7 @@
                             <a href="./" target="">首页</a>
                             <span class="bder"></span>
                         </li>
-                        <li class="act">
+                        <li class="act active">
                             <a href="./product.html" target="">产品中心</a>
                             <span class="bder"></span>
                         </li>
@@ -68,12 +68,12 @@
         </div>
     </header>
     <!-- banner -->
-    <div class="">
-        <img class="img-res" src="./img/product/product_banner.jpg" alt="">
+    <div class="bner">
+        <img class="" src="./img/product/product_banner.jpg" alt="">
     </div>
     <!-- content -->
     <section class="cpin">
-        <div class="tab" data-toggle="hover">
+        <div class="tab">
             <div class="container">
                 <div class="tab-head">
                     <div class="line-big shebei tab-nav">
@@ -113,7 +113,7 @@
                     <div class="container">
                         <ul class="list-unstyle line-big posui-product">
                             <li class="xl6 xs4 xb3">
-                                <a href="" class="chanpin">
+                                <a href="./product_article.html" class="chanpin">
                                     <img src="./img/product/pe.jpg" class="img-responsive" alt="PE颚式破碎机">
                                     <a class="beijing" href="">
                                         <span class="icon-comment-o"></span>
@@ -691,6 +691,11 @@
 	<script src="/js/respond.js"></script>
     <![endif]-->
     <!-- 以下开始本页面业务逻辑 -->
+    <script>$(document).ready(function () {
+        $(".nav .act").mouseenter(function () {
+            $(this).addClass("active").siblings().removeClass("active")
+        });
+    });</script>
 </body>
 
 </html>

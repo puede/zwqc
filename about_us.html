@@ -54,7 +54,7 @@
                             <a href="./news.html" target="">新闻中心</a>
                             <span class="bder"></span>
                         </li>
-                        <li class="act">
+                        <li class="act active">
                             <a href="./about_us.html" target="">关于黎明</a>
                             <span class="bder"></span>
                         </li>
@@ -68,8 +68,8 @@
         </div>
     </header>
     <!-- banner -->
-    <div class="">
-        <img class="img-res" src="./img/about/about-banner.jpg" alt="">
+    <div class="bner">
+        <img class="" src="./img/about/about-banner.jpg" alt="">
     </div>
     <!-- content -->
     <div class="container">
@@ -119,50 +119,6 @@
                 </div>
             </li>
         </ul>
-        <!-- <ul class="list-unstyle line-big timeline">
-            <li class="xl12 xm3">
-                <img src="./img/about/about-6.jpg" alt="">
-            </li>
-            <li class="xl12 xm9">
-                <h4>2017-2015</h4>
-                <p>2016年10月通过“知识产权管理体系”认证，截至目前，有效专利达到106件，其中发明专利4件，外观专利12件，实用新型专利90件。</p>
-                <p>2016年7月获河南省质量标杆殊荣。</p>
-                <p>2016年6月名牌产品VSI5X立轴冲击式破碎机获专项奖励扶持资金。</p>
-                <p>2015年12月HPT高效液压圆锥破碎机荣膺2015河南省科技进步奖三等奖。</p>
-                <p>2015年5月HPT高效液压圆锥破碎机获郑州市科技进步一等奖。</p>
-                <p>2015年1月入选全国矿山机械标准委员会第五届委员；VSI5X立轴冲击式破碎机"被认定为"河南省名牌产品"。</p>
-            </li>
-        </ul> -->
-        <!-- <div class="step">
-            <div class="step-bar">
-                <span class="step-point"></span>
-                <span class="step-text">2017-2015</span>
-            </div>
-            <div class="step-bar">
-                <span class="step-point"></span>
-                <span class="step-text">2014-2013</span>
-            </div>
-            <div class="step-bar">
-                <span class="step-point"></span>
-                <span class="step-text">2012-2010</span>
-            </div>
-            <div class="step-bar">
-                <span class="step-point"></span>
-                <span class="step-text">2009-2008</span>
-            </div>
-            <div class="step-bar">
-                <span class="step-point"></span>
-                <span class="step-text">2007-2006</span>
-            </div>
-            <div class="step-bar">
-                <span class="step-point"></span>
-                <span class="step-text">2005-2003</span>
-            </div>
-            <div class="step-bar">
-                <span class="step-point"></span>
-                <span class="step-text">创业前期</span>
-            </div>
-        </div> -->
     </div>
     <!-- content -->
     <div class="container">
@@ -422,7 +378,13 @@
 	<script src="/js/respond.js"></script>
     <![endif]-->
     <!-- 以下开始本页面业务逻辑 -->
-
+    <script>
+        $(document).ready(function () {
+			$(".nav .act").mouseenter(function () {
+				$(this).addClass("active").siblings().removeClass("active")
+			});
+        });
+    </script>
 </body>
 
 </html>

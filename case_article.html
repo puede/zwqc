@@ -46,7 +46,7 @@
                             <span class="bder"></span>
                         </li>
 
-                        <li class="act">
+                        <li class="act active">
                             <a href="./case.html" target="">案例中心</a>
                             <span class="bder"></span>
                         </li>
@@ -68,12 +68,12 @@
         </div>
     </header>
     <!-- banner -->
-    <div class="">
-        <img class="img-res" src="./img/case/banner-case.jpg" alt="">
+    <div class="bner">
+        <img class="" src="./img/case/banner-case.jpg" alt="">
     </div>
     <!-- content -->
     <section class="">
-        <div class="tab" data-toggle="hover">
+        <div class="tab">
             <div class="container case-a">
                 <div class="tab-head">
                     <ul class="line tab-nav">
@@ -405,6 +405,14 @@
 	<script src="/js/respond.js"></script>
     <![endif]-->
     <!-- 以下开始本页面业务逻辑 -->
+           
+    <script>
+        $(document).ready(function () {
+			$(".nav .act").mouseenter(function () {
+				$(this).addClass("active").siblings().removeClass("active")
+			});
+        });
+    </script>
 </body>
 
 </html>
