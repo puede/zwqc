@@ -10,18 +10,19 @@
         margin-bottom: 20px
         img
             position: relative
-        p
-            font-size: 14px
-            line-height: 29px
-            text-indent: 2em
-            padding: 10px
+        .p-content
+            p
+                font-size: 14px
+                line-height: 29px
+                text-indent: 2em
+                padding: 10px
+                color: #ffffff
             @media (min-width: 500px)
                 width: 95.8%
                 padding: 25px
                 position: absolute
                 bottom: 0
-                color: #ffffff
-                background: #177cb0
+                background: $blue
                 opacity: .8
             @media (min-width: 520px)
                 width: 96%
@@ -33,33 +34,19 @@
                 width: 96.9%
             @media (min-width: 700px)
                 width: 97.1%
-            @media (min-width: 760px) and (max-width: 999px)
+            @media (min-width: 760px)
                 width: 97.3%
-                padding: 25px
-                position: absolute
-                bottom: 0
-                color: #ffffff
-                background: #177cb0
-                opacity: .8
             @media (min-width: 1000px)
                 padding: 20px 40px
                 width: 96%
-                position: absolute
-                bottom: 0
-                color: #ffffff
-                background: #177cb0
-                opacity: .8
             @media (min-width: 1200px)
                 padding: 30px 60px 21px 59px
                 width: 95%
-                position: absolute
-                bottom: 0
-                color: #ffffff
-        .p1
-            @media (min-width: 1000px)
-                padding: 20px 16px
-            @media (min-width: 1200px)
-                padding: 30px 60px 21px 59px
+            .p1
+                @media (min-width: 1000px)
+                    padding: 20px 16px
+                @media (min-width: 1200px)
+                    padding: 30px 60px 21px 59px
 .news-art
     padding-top: 40px
     .about-3

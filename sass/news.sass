@@ -190,11 +190,17 @@
             border-top: 3px solid #888888
 // 新闻中心内页
 .news-detail
-    padding-top: 28px
-    padding-bottom: 30px
+    padding-bottom: 
+    @media (min-width: 320px)
+        padding-top: 10px
+    @media (min-width: 500px)
+        padding-top: 28px
     h3
-        line-height: 60px
         border-bottom: 1px solid $blue
+        @media (min-width: 320px)
+            line-height: 30px
+        @media (min-width: 540px)
+            line-height: 60px
     .clock
         padding-top: 10px
         margin-bottom: 26px
