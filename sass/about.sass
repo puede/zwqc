@@ -149,7 +149,10 @@
             line-height: 29px
 .timeline
     padding-top: 20px
-    padding-bottom: 20px
+    @media (min-width: 760px)
+        padding-bottom: 40px 
+    @media (min-width: 1200px)
+        padding-bottom: 60px
     h4
         font-size: 24px
         color: $blue
@@ -157,57 +160,31 @@
     p
         font-size: 14px
         line-height: 36px
-.step, .step-bar
-    height: 1px
-.step-bar
-    width: 14%
-.step-point 
-    position: relative
-    display: inline-block
-    width: 10px
-    height: 10px
-    line-height: 10px
-    top: -11px
-    border-radius: 50%
-    color: #fff
-    background-color: $blue
-    box-shadow: 1px 1px 1px rgba(0,0,0,.175)
-    @media (min-width: 320px) and (max-width: 759px)
-        left: 40px
-    @media (min-width: 760px)
-        left: 40px
-    @media (min-width: 1000px)
-        left: 56px
-    @media (min-width: 1200px)
-        left: 66px
 .tab .tab-nav
-    li
-        background: #ebebeb
+    li 
+    .active
+        a
+            span
+                color: $orange
         margin-bottom: 30px
-.tab .tab-nav .active
-    background: #ebebeb    
-.step .active, .step .active .step-point
-    background: $orange    
-.step
-    margin-top: 20px
-    box-shadow: none
-    @media (min-width: 320px)
-        margin-bottom: 200px
-    @media (min-width: 370px)
-        margin-bottom: 150px
-    @media (min-width: 623px)
-        margin-bottom: 80px
-.step-text 
-    color: $blue
-    text-align: center
-    height: 0px
-    @media (min-width: 320px) and (max-width: 759px)
-        margin-top: -54px
-        padding-top: 14px
-    @media (min-width: 760px)
-        margin-top: -42px
 .tab .tab-nav li a
     padding: 0    
+    text-align: center
+    position: relative
+    p
+        line-height: 69px
+        position: absolute
+        bottom: 0
+        @media (min-width: 1000px)
+            left: 32px
+        @media (min-width: 1200px)
+            left: 46px
+        
+    span
+        font-size: 14px
+        position: absolute
+        bottom: -10px
+        color: $blue
 .tab .tab-nav li a,.tab .tab-body-bordered
     border-style: none
 .tab-head
@@ -215,7 +192,20 @@
     margin-bottom: 50px
     ul
         padding-left: 0
+    @media (min-width: 320px) and (max-width: 759px)
+        display: none
+.tab .tab-body .tab-panel 
+        @media (min-width: 320px) and (max-width: 759px)
+            display: block
+        .img2
+            display: none
+.tab-panel
+    @media (min-width: 320px) and (max-width: 759px)
+        display: block
 .tab-nav
     li  
         @media (min-width: 760px)
-            width: 13%
+            width: 14%
+            border-bottom: 1px dotted #a0a0a0
+            float: left
+        
