@@ -28,8 +28,12 @@
                 border-bottom: 3px solid #fff 
                 display: block
                 width: 30px
-                @media (min-width: 320px) and (max-width: 999px)
+                @media (min-width: 760px) and (max-width: 999px)
                     margin-left: 39%
+                @media (min-width: 320px) and (max-width: 759px)
+                    margin-left: 0
+                    border-bottom: 3px solid #eee 
+                    width: 100%
                 @media (min-width: 1000px)
                     margin-top: 5px
                     margin-left: 50%
@@ -48,7 +52,8 @@
                 color: $blue
         .bder
             @media (min-width: 320px) and (max-width: 759px)
-                border-bottom: 3px solid #ffffff
+                width: 100%
+                border-bottom: 3px solid $blue
             @media (min-width: 760px)
                 border-bottom: 3px solid $blue
 
